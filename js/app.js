@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let tl1 = new TimelineMax();
 
     tl1
+        // Tela de carregamento
+    
         .fromTo('.bg-loader', 1, {width: '100%'},{
             width: '0%', delay: 5, ease: Expo.easeInOut
         })
 
-        // Video
+        // Video de fundo
         
         .fromTo('.bg-video', 2, 
         {width: '0%', opacity: 0},
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { y: 0, opacity: 1, ease: Back.easeOut.config(1.7)
         }, '-=0.5')
 
-        // Home, story...
+        // Navlist
 
         .fromTo('.nav-list', 0.7, 
         { y: 50, opacity: 0,},
